@@ -1,23 +1,25 @@
-import logo from './logo.svg';
+// Importaçoes de paginas
+import Home from './pages/Home/Home';
+import Sobre from './pages/Sobre/sobre';
+import Login from './pages/Login/Login'
+import Cadastro from './pages/Cadastro/Cadastro'
+// Importações de funções
+import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import './App.css';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+      <Routes>
+        <Route path  ="/" element={<Home />}></Route>
+        <Route path  ="/Login" element={<Login />}></Route>
+        <Route path  ="/cadastro" element={<Cadastro />}></Route>
+        <Route path="/Sobre" element={<Sobre />}></Route>
+      </Routes>
+      
+      </BrowserRouter>
     </div>
   );
 }
