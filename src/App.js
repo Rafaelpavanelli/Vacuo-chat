@@ -3,6 +3,9 @@ import Home from './pages/Home/Home';
 import Sobre from './pages/Sobre/sobre';
 import Login from './pages/Login/Login'
 import Cadastro from './pages/Cadastro/Cadastro'
+import React from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 // Importações de funções
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import './App.css';
@@ -20,6 +23,7 @@ function App() {
       </Routes>
       
       </BrowserRouter>
+      <ToastContainer />
     </div>
   );
 }

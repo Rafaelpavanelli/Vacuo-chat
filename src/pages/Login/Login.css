@@ -1,0 +1,53 @@
+.login {
+  max-width: 100vw;
+  max-height: 100vh;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(0, 220, 255);
+  background: linear-gradient(90deg, rgb(0, 220, 255) 26%, rgb(0, 255, 157) 71%);
+}
+.login form {
+  background: rgba(255, 255, 255, 0.24);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.3px);
+  -webkit-backdrop-filter: blur(5.9px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 30%;
+  height: 60%;
+  border: 1px solid black;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.login form label {
+  margin: 10px;
+}
+.login form label p {
+  font-size: 1.4rem;
+}
+.login form label input {
+  width: 40vh;
+  border: none;
+}
+.login form label input:focus {
+  border: none;
+}
+.login form label input::-moz-placeholder {
+  text-align: center;
+}
+.login form label input:-ms-input-placeholder {
+  text-align: center;
+}
+.login form label input::placeholder {
+  text-align: center;
+}
+.login form button {
+  background: #84ECF0;
+  border: 1px solid white;
+  cursor: pointer;
+}/*# sourceMappingURL=Login.css.map */
