@@ -31,7 +31,7 @@
   font-size: 1.4rem;
 }
 .login form label input {
-  width: 40vh;
+  min-width: 30%;
   border: none;
 }
 .login form label input:focus {

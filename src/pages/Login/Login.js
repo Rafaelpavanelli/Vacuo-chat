@@ -23,9 +23,7 @@ function Login(){
         </label>
         <button onClick={(e)=>{
           e.preventDefault();
-          console.log("FOi");
-          console.log(useNome,useSenha);
-          Auth({useNome,useSenha})
+          Auth({useNome,useSenha}) ? toast.success("Logado") : toast("Login Invalido")
           }}>Login</button>
         <p>Não tem cadastro? <Link to="/cadastro">Cadastre-se</Link></p>
         

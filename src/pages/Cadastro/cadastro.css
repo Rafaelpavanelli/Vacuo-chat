@@ -1,0 +1,23 @@
+.cadastro {
+  background: blue;
+  margin: 0px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cadastro form {
+  border: 1px solid white;
+  padding: 8% 8%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5%;
+}
+.cadastro form h1 {
+  text-align: start;
+  margin-bottom: 20px;
+}
+.cadastro form label {
+  margin-bottom: 10%;
+}/*# sourceMappingURL=cadastro.css.map */
