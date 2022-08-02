@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import {Link} from 'react-router-dom'
+import Cadastrar from '../../components/Cadastrar';
 import './cadastro.css'
 function Cadastro(){
   const [useNome,setUseNome]=useState("");
@@ -23,7 +24,7 @@ function Cadastro(){
         </label>
         <button onClick={(e)=>{
           e.preventDefault();
-          console.log(useNome,useEmail,useSenha);
+          Cadastrar({useNome,useEmail,useSenha})
         }}>Verificar</button>
         <h3>Ja possuo <Link to='/Login'>Login</Link></h3>
       </form>

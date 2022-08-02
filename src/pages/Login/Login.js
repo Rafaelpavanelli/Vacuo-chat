@@ -23,7 +23,12 @@ function Login(){
         </label>
         <button onClick={(e)=>{
           e.preventDefault();
-          Auth({useNome,useSenha}) ? toast.success("Logado") : toast("Login Invalido")
+          if(useNome===""){
+            toast.error("Campo email vazio")
+          }else{
+            Auth({useNome,useSenha})
+          }
+          
           }}>Login</button>
         <p>Não tem cadastro? <Link to="/cadastro">Cadastre-se</Link></p>
         
