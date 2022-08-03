@@ -9,17 +9,16 @@ function Login(){
   const [useSenha,setUseSenha] = useState("");
  
   return(
-   
     <div className="login">
       <form>
         <h1>Login</h1>
         <label>
           <p>Digite seu email</p>
-        <input type="Email" placeholder='Email' onChange={(e)=>setUseNome(e.target.value) } value={useNome}/>
+        <input type="Email" placeholder='Email' onChange={(e)=>setUseNome(e.target.value) } value={useNome} required/>
         </label>
         <label>
           <p>Digite sua senha</p>
-        <input type="Password" placeholder="Senha" onChange={(e)=>setUseSenha(e.target.value) } value={useSenha}/>
+        <input type="Password" placeholder="Senha" onChange={(e)=>setUseSenha(e.target.value) } value={useSenha} required/>
         </label>
         <button onClick={(e)=>{
           e.preventDefault();

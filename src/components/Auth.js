@@ -1,28 +1,28 @@
 
 import axios from 'axios';
-import api from '../api';
+import redirecting from './redirecting';
+import Home from '../pages/Home/Home';
 import { toast } from 'react-toastify';
 import { useEffect, useState } from 'react';
+import { Navigate } from 'react-router-dom';
 function Auth({useNome,useSenha}){
-  axios.get("http://localhost:3000/Users")
+  function Auth(){
+  axios.post("http://192.168.2.114:3333/sessions",{
+    "email":useNome,
+    "password":useSenha
+  })
   .then((response)=>{
-  const result=response.data.find(data=>data.email===useNome)
-  if(result.senha!=useSenha || result.senha==="") {
-    toast.error("Senha ou email invalido")
-  }
-  else if(result===undefined){
-    toast.error("Login não encontrado")
-  }
-  else if(result.nome){
-    toast.success("welcome vacila")
-  }
-    console.log(result);
+    localStorage.setItem("token","response.data.token");
+    redirecting(response.data)
+    return response.data
   } 
   )
   .catch((error)=>{
     toast.error("Login não encontrado")
   });
-
- 
+  }
+  useEffect(()=>{
+    Auth()
+  },[])
 
 }export default Auth;

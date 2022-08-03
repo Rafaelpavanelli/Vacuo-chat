@@ -1,5 +1,6 @@
 // Importaçoes de paginas
 import Home from './pages/Home/Home';
+import Chats from './pages/Chats/chats';
 import Sobre from './pages/Sobre/sobre';
 import Login from './pages/Login/Login'
 import Cadastro from './pages/Cadastro/Cadastro'
@@ -20,6 +21,8 @@ function App() {
         <Route path  ="/Login" element={<Login />}></Route>
         <Route path  ="/cadastro" element={<Cadastro />}></Route>
         <Route path="/Sobre" element={<Sobre />}></Route>
+        <Route path="/Chats" element={<Chats />}></Route>
+
       </Routes>
       
       </BrowserRouter>

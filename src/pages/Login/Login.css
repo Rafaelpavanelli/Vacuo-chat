@@ -16,26 +16,41 @@
   backdrop-filter: blur(8.3px);
   -webkit-backdrop-filter: blur(5.9px);
   border: 1px solid rgba(255, 255, 255, 0.3);
-  width: 30%;
-  height: 60%;
+  width: 30vw;
+  height: 60vh;
   border: 1px solid black;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   display: flex;
   flex-direction: column;
+}
+.login form a {
+  -webkit-text-decoration-color: white;
+          text-decoration-color: white;
+  color: black;
+  transition: 0.5s;
+}
+.login form a:hover {
+  color: white;
+  -webkit-text-decoration-color: black;
+          text-decoration-color: black;
 }
 .login form label {
   margin: 10px;
 }
 .login form label p {
   font-size: 1.4rem;
+  color: black;
 }
 .login form label input {
   min-width: 30%;
-  border: none;
+  background-color: transparent;
+  border: 0.1px solid black;
 }
 .login form label input:focus {
-  border: none;
+  border: transparent;
+  color: black;
+  background-color: white;
 }
 .login form label input::-moz-placeholder {
   text-align: center;

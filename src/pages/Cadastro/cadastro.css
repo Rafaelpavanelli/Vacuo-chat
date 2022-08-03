@@ -10,22 +10,31 @@
   background: linear-gradient(90deg, rgb(0, 220, 255) 26%, rgb(0, 255, 157) 71%);
 }
 .cadastro form {
+  box-sizing: border-box;
   background: rgba(255, 255, 255, 0.24);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(8.3px);
   -webkit-backdrop-filter: blur(5.9px);
   border: 1px solid rgba(255, 255, 255, 0.3);
-  width: 30%;
-  height: 60%;
+  width: 30vw;
+  height: 60vh;
   border: 1px solid black;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   display: flex;
   flex-direction: column;
 }
-.cadastro form label {
-  margin: 10px;
+.cadastro form a {
+  -webkit-text-decoration-color: white;
+          text-decoration-color: white;
+  color: black;
+  transition: 0.5s;
+}
+.cadastro form a:hover {
+  color: white;
+  -webkit-text-decoration-color: black;
+          text-decoration-color: black;
 }
 .cadastro form label p {
   font-size: 1.2rem;
@@ -33,22 +42,30 @@
 }
 .cadastro form label input {
   min-width: 30%;
-  border: none;
+  background-color: transparent;
+  border: 0.1px solid black;
 }
 .cadastro form label input:focus {
   border: none;
 }
 .cadastro form label input::-moz-placeholder {
   text-align: center;
+  color: black;
 }
 .cadastro form label input:-ms-input-placeholder {
   text-align: center;
+  color: black;
 }
 .cadastro form label input::placeholder {
   text-align: center;
+  color: black;
 }
 .cadastro form button {
+  color: gray;
   background: #84ECF0;
-  border: 1px solid white;
+  border: 1px solid black;
   cursor: pointer;
+}
+.cadastro form button:hover {
+  color: black;
 }/*# sourceMappingURL=cadastro.css.map */

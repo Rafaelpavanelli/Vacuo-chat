@@ -16,6 +16,20 @@
      "senha":"Senha",
      "nome":"Leonardo"
   }
-  ]
-   
+  ],
+   "Chats":[{
+      "id":"1",
+      "participante-central":"Carlos",
+      "participante-convidado":"José",
+      "chat":[{
+        "mensagem":"olá",
+        "horario": "10:32",
+        "remetente":"Carlos"
+      },
+      {
+        "mensagem":"eae?",
+        "Horario":"10:32",
+        "remetente":"josé"
+      }]
+   }]
 }
